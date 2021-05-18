@@ -56,6 +56,18 @@ h2 {
   background-color: #9400d3;
 }
 
+@media screen and (max-width: 600px) {
+  #banner {
+    max-height: 100%;
+    min-height: 75%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: auto;
+    padding: 0px;
+    padding-top: 50px;
+  }
+}
+
 /* PAGE CONTENT -----------------------------------------*/
 
 .column-wrap {
@@ -69,6 +81,18 @@ h2 {
 
 .column2 {
   width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column-wrap {
+  display: block;
+}
+.column1 {
+  width: 100%;
+}
+.column2 {
+  width: 100%;
+}
 }
 
 /* COMPANY INFO ----------------------------------------*/
@@ -95,6 +119,11 @@ h2 {
   padding-top: 25px;
 }
 
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 80%;
+}
+}
 
 /* FORM -------------------------------------------------*/
 
@@ -146,6 +175,10 @@ input[type=text], input[type=tel], select, textarea {
   min-height: 33vh;
 }
 
+#contact-title {
+  font-size: 28px;
+}
+
 .contact-links {
   height: auto;
   width: 25%;
@@ -166,4 +199,9 @@ input[type=text], input[type=tel], select, textarea {
 #git-logo {
   height: 75px;
   width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-links {width: 100%;}
+  #contact-title {font-size: 21px;}
 }
